@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yani Bustos Makeup</title>
+  <link href="assets/style/main.css" rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/signerica-fat" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+  <header id="cabeza">
+    <div class="encabezado__logo">
+      <a href="index.html"><img src="assets/Fotos/logo.jpg" alt="foto de yani bustos" /></a>
+    </div>
+    <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <span class="material-symbols-outlined">
+            menu
+            </span>
+        </label>
+
+        <div class="encabezado__menu">
+          <nav>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="servicio.html"> Servicios de Maquillaje</a></li>
+              <li><a href="estudio.html">Beauty Studio</a></li>
+              <li><a href="portfolio.html"> Portfolio</a></li>
+              <li><a href="contacto.html"> Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="h1_dif">
+          <h1><a href="index.html">Yanina Bustos</a></h1>
+        </div>
+  </header>
+  <section>
+    <h2>¿Nos ponemos en contacto?</h2>
+    <p>Dejame tus datos y nos contactamos con vos.</p>
+    <form class="formulario">
+      <label class="datos">Nombre: </label><input type="text" placeholder="Nombre" class="requerido" required />
+      <label class="datos">Apellido: </label><input type="text" placeholder="Apellido" class="requerido" />
+      <br />
+      <label class="datos">Email</label><input type="email" placeholder="tucorreo@tucorreo.com" required
+        class="requerido" />
+      <label class="datos">Fecha probable del evento: </label><input type="date" required class="requerido" />
+      <br />
+      <textarea class="datos">Deja tu mensaje aquí</textarea>
+      <br />
+      <label class="datos"><small>Deseo recibir notificaciones</small> </label><input type="checkbox"
+        name="newsletter" />
+
+      <br />
+      <input type="submit" value="Enviar" />
+      <input type="reset" value="Limpiar formulario" />
+    </form>
+  </section>
+
+  <footer id="pie">
+    <div class="pie__pag">
+      <div class="pie__pag__icon">
+        <a href="https://www.instagram.com/yanibustosmakeup/?hl=es" target="_blank">
+          <span class="icon-instagram"></span>
+        </a>
+        <p>Seguime en Instagram</p>
+      </div>
+      <div class="pie__pag__texto">
+        <p>Yani Bustos Makeup - Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+@use '_commons' as c;
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    display: block;
+    color: #595857;
+    margin: 0 30px;
+}
+
+#check:checked~.encabezado__menu ul {
+    left: 0;
+}
+
+.encabezado__menu ul {
+    position: fixed;
+    width: 70%;
+    height: 70vh;
+    background: map-get(c.$colores, "menu-hamb");
+    font-family: sans-serif;
+    top: 100px;
+    left: -100%;
+    text-align: center;
+    transform: .5s;
+    line-height: 30px;
+
+    li{
+        display: block;
+        margin: 50px 0;
+    }
+    
+    a{
+        text-decoration: none;
+        color: map-get(c.$colores, "letra-menu");
+        transition: background-color .5s;
+
+        :link{
+            color: rgb(212, 200, 200);
+            text-decoration: none;
+        }
+        
+        :hover{
+            color: rgb(9, 9, 9);
+            background-color: #fff;
+            border-radius: 3px;
+        }
+    }
+    
+    
+}

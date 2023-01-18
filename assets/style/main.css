@@ -1,0 +1,557 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/* Inicio Estilo para index */
+#contenedor {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100px 3fr 2fr 200px;
+  justify-items: flex-start;
+  grid-template-areas: "cabeza" "principal" "servicios" "pie";
+}
+
+/* Inicio Cabeza */
+#cabeza {
+  grid-area: cabeza;
+  width: 100%;
+}
+
+.encabezado {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.encabezado__logo {
+  width: 50%;
+  height: 50px;
+  margin: 10px 100px;
+}
+.encabezado__logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: 10px 0px 0px 10px;
+  align-self: center;
+}
+
+/* Fin Cabeza */
+/* Inicio Pirncipal */
+#principal {
+  grid-area: principal;
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  display: flex;
+  justify-content: space-around;
+  width: auto;
+  height: 20vh;
+  font-family: "Signerica Medium", sans-serif;
+  font-size: 50px;
+  margin: 10px 100px 90px;
+  text-align: center;
+}
+
+h2 {
+  display: flex;
+  justify-content: space-around;
+  width: auto;
+  height: 100px;
+  color: #999999;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  background: #CCCCCC;
+  text-align: center;
+  line-height: 100px;
+  margin: 0 10px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 17px 0px rgba(125, 116, 106, 0.9);
+  -webkit-box-shadow: 10px 10px 17px 0px rgba(125, 116, 106, 0.9);
+  -moz-box-shadow: 10px 10px 17px 0px rgba(125, 116, 106, 0.9);
+}
+
+#fotos {
+  width: 100%;
+  height: auto;
+}
+
+.fotos__inicio__ok p {
+  font-family: sans-serif;
+  margin: 40px 10px;
+  font-size: 19px;
+  text-align: center;
+  font-weight: lighter;
+}
+.fotos__inicio__ok img {
+  width: 90%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  box-shadow: 0px 0px 24px 8px rgba(0, 0, 0, 0.15);
+  margin: 40px 30px;
+  border-radius: 10px;
+}
+
+.fotos__inicio__ok--dif {
+  display: none;
+}
+
+/* Fin Principal */
+/* Inicio Servicios */
+#servicios {
+  grid-area: servicios;
+}
+
+.servicios {
+  display: flex;
+  flex-direction: column;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+
+.servicios__demandados {
+  text-align: center;
+}
+
+.servicios__demandados__tipo p {
+  font-family: sans-serif;
+  font-size: 20px;
+  background-color: #e5dbcf;
+  width: 50%;
+  height: 60px;
+  margin: 60px 150px;
+  line-height: 3;
+  border-radius: 5px;
+  color: #575859;
+  box-shadow: 0px 0px 24px 8px rgba(0, 0, 0, 0.055);
+}
+
+.servicios__demandados__cuerpo p {
+  font-family: sans-serif;
+  font-size: 18px;
+  width: 90%;
+  height: auto;
+  color: #575859;
+  margin-left: 20px;
+}
+
+/* Fin Servicios */
+/* Fin Estilo CSS para index */
+/* Sobre mí */
+.carousel-inner {
+  margin: 10px 0;
+  width: 80%;
+  height: auto;
+  padding: 100px;
+}
+
+/* Estilos CSS a Servicios */
+.h1_dif {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 200px;
+}
+
+h1 a,
+h1 a:link {
+  text-decoration: none;
+  display: block;
+  width: auto;
+  height: 10vh;
+  font-family: "Signerica Medium", sans-serif;
+  font-weight: bolder;
+  font-size: 40px;
+  margin: 30px 70px;
+  text-align: center;
+  color: #575859;
+}
+
+h2 a {
+  text-decoration: none;
+}
+
+.menu__servicios ul {
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-decoration: none;
+  transform: 0.5s;
+  list-style: none;
+  margin: 50px 10px;
+}
+
+.menu__servicios ul li {
+  color: #575859;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.menu__servicios ul a:link {
+  color: #d18a8a;
+}
+
+.menu__servicios ul a:visited {
+  color: #575859;
+}
+
+.menu__servicios ul a:hover {
+  background-color: #c5bebb;
+  color: #fff;
+  transform: 0.5s;
+}
+
+.foto__novia img {
+  width: 80%;
+  margin: 30px 50px;
+}
+
+/* Fin estilos CSS a Servicios */
+/* Estilos CSS a Estudio */
+video {
+  width: 100%;
+  height: 500px;
+}
+
+/* Fin estilos CSS a Estudio */
+/* Estilos CSS a contacto */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+}
+
+.datos {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #575859;
+  font-style: oblique;
+}
+
+.requerido {
+  width: 300px;
+  height: 40px;
+  font-family: sans-serif;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  background: #fcd6c6;
+  border-style: none;
+}
+
+/* Inicio Pie */
+#pie {
+  grid-area: pie;
+  background-color: rgba(52, 53, 54, 0.9607843137);
+  width: 100%;
+  height: auto;
+}
+
+.pie__pag {
+  margin: 50px 10px;
+}
+
+.pie__pag__icon {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  margin: 10px;
+  color: #fff;
+}
+.pie__pag__icon a:hover {
+  background: #c5bebb;
+  transform: 0.5s;
+}
+.pie__pag__icon span {
+  font-size: 20px;
+  color: #fff;
+}
+.pie__pag__icon p {
+  color: #fff;
+  font-family: sans-serif;
+  margin: 10px;
+}
+
+.pie__pag__texto p {
+  font-size: 15px;
+  font-family: sans-serif;
+  width: 100%;
+  height: auto;
+  margin: 15px;
+  color: #fff;
+}
+
+/* Fin Pie */
+#check {
+  display: none;
+}
+
+.checkbtn {
+  display: block;
+  color: #595857;
+  margin: 0 30px;
+}
+
+#check:checked ~ .encabezado__menu ul {
+  left: 0;
+}
+
+.encabezado__menu ul {
+  position: fixed;
+  width: 70%;
+  height: 70vh;
+  background: #993300;
+  font-family: sans-serif;
+  top: 100px;
+  left: -100%;
+  text-align: center;
+  transform: 0.5s;
+  line-height: 30px;
+}
+.encabezado__menu ul li {
+  display: block;
+  margin: 50px 0;
+}
+.encabezado__menu ul a {
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.5s;
+}
+.encabezado__menu ul a :link {
+  color: rgb(212, 200, 200);
+  text-decoration: none;
+}
+.encabezado__menu ul a :hover {
+  color: rgb(9, 9, 9);
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+/* Inicio media query para desktop */
+@media screen and (min-width: 1280px) {
+  #contenedor {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 3fr 3fr 100px;
+    grid-template-areas: "cabeza" "principal" "servicios" "pie";
+  }
+  #cabeza {
+    width: 100%;
+  }
+  .encabezado {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+  }
+  .encabezado__logo {
+    width: 300px;
+  }
+  .encabezado__menu {
+    width: 100%;
+    height: 100px;
+  }
+  .encabezado__menu ul {
+    width: 95%;
+    height: 100px;
+    left: 0;
+    position: relative;
+    top: 0;
+    color: rgba(192, 200, 207, 0.7254901961);
+    margin: 0;
+    transform: 0.5s;
+    background: #fff;
+  }
+  .encabezado__menu ul li {
+    display: inline-block;
+    margin: 50px 20px;
+  }
+  .encabezado__menu ul li a {
+    text-decoration: none;
+    color: rgb(128, 124, 124);
+    transition: background-color 0.1s;
+  }
+  .encabezado__menu ul li a:hover {
+    color: #fff;
+    border-bottom: 3px solid;
+    background-color: rgb(226, 146, 93);
+  }
+  .checkbtn {
+    display: none;
+  }
+  h1 {
+    font-size: 90px;
+    margin-bottom: 60px;
+    -webkit-animation: myAnim 1s ease 0s 1 normal forwards;
+            animation: myAnim 1s ease 0s 1 normal forwards;
+  }
+  @-webkit-keyframes myAnim {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes myAnim {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  h2 {
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-family: sans-serif;
+    font-size: 30px;
+  }
+  #fotos {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    margin: 15px 25px;
+  }
+  .fotos__inicio__ok {
+    font-family: sans-serif;
+    margin: 0px 10px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: lighter;
+  }
+  .fotos__inicio__ok img {
+    width: 75%;
+    height: auto;
+    margin: 0 10px 60px 25px;
+  }
+  .fotos__inicio__ok--dif {
+    display: block;
+  }
+  .fotos__inicio__ok--dif img {
+    width: 80%;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+    box-shadow: 0px 0px 24px 8px rgba(0, 0, 0, 0.15);
+    margin: 40px 20px;
+    border-radius: 10px;
+  }
+  .fotos__inicio__ok--dif p {
+    font-family: sans-serif;
+    margin: 40px 10px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: lighter;
+  }
+  .fotos__inicio--dis {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .fotos__inicio--dis image {
+    width: 10px;
+    height: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+    box-shadow: 0px 0px 24px 8px rgba(0, 0, 0, 0.15);
+    margin: 40px 20px;
+    border-radius: 10px;
+  }
+  .fotos__inicio--dis p {
+    font-size: 16px;
+  }
+  .servicios {
+    display: flex;
+    flex-direction: column;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    margin: 20px 70px;
+    width: 90%;
+  }
+  .servicios__demandados {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .servicios__demandados__tipo p {
+    width: 300px;
+    font-size: 25px;
+  }
+  .servicios__demandados__cuerpo p {
+    width: 100%;
+    font-size: 20px;
+    font-weight: normal;
+  }
+  #pie {
+    width: 100%;
+  }
+  .pie__pag {
+    margin: 10px;
+  }
+  /* Servicio vista para desktop */
+  .foto__novia img {
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 30px 0px 30px 110px;
+    box-shadow: 0px 0px 24px 8px rgba(0, 0, 0, 0.15);
+  }
+  /* Vista "sobre mi" desktop */
+  .d-block {
+    width: 80%;
+    height: 800px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  span .carousel-control-prev-icon {
+    background-color: #575859;
+  }
+  /* Vista "contacto" desktop */
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    width: 50%;
+    height: auto;
+    margin: 30px 400px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0px 0px 24px 8px rgba(0, 0, 0, 0.15);
+  }
+  .requerido {
+    color: #000;
+  }
+  /* Vista "Beauty Studio" desktop */
+  iframe {
+    display: block;
+    margin: 0 300px;
+    padding: 10px;
+    width: 60%;
+    height: 400px;
+    background: #c5bebb;
+  }
+}
+/* Fin query para desktop *//*# sourceMappingURL=main.css.map */
